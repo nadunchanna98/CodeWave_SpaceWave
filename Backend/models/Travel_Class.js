@@ -1,22 +1,19 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/sequelize');
 
-const Planet = sequelize.define('Planet', {
-  Planet_ID: {
+const Travel_Class = sequelize.define('Travel_Class', {
+  Travel_Class_ID: {
     type: DataTypes.INTEGER,
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
   },
-  PlanetName: {
+  Travel_Class_Name: {
     type: DataTypes.STRING(100),
   },
-  Temperature: {
-    type: DataTypes.INTEGER,
-  },
-  PlanetDescription: {
-    type: DataTypes.STRING(1000),
+  Travel_Class_Capacity: {
+    type: DataTypes.BIGINT,
   },
 });
 
-module.exports = Planet;
+module.exports = Travel_Class;

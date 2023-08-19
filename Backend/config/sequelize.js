@@ -1,11 +1,11 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('spacewave', 'root', '', {
+const sequelize = new Sequelize('spacewave', 'root', 'Gepn43159770', {
   host: 'localhost',
   dialect: 'mysql',
 });
 
-sequelize.sync({ force: true })
+sequelize.sync({  })
   .then(() => {
     console.log('Drop and re-sync db.');
   })
