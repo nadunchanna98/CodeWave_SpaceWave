@@ -1,6 +1,7 @@
 const cors = require("cors");
 const express = require("express");
-const db = require("./models");
+const planetRoutes = require('./routes/planet');
+const agencyRoutes = require('./routes/Agency');
 const app = express();
 
 var corsOptions = {
@@ -15,18 +16,9 @@ app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
-db.sequelize.sync()
-  .then(() => {
-    console.log("Synced db.");
-  })
-  .catch((err) => {
-    console.log("Failed to sync db: " + err.message);
-  });
+app.use('/api', planetRoutes);  //http://localhost:8080/api/planets
+app.use('/api', agencyRoutes);  //http://localhost:8080/api/agencies
 
-  //In development,  need to drop existing tables and re-sync database. 
-  db.sequelize.sync({ force: true }).then(() => {
-    console.log("Drop and re-sync db.");
-  });
 
 // simple route
 app.get("/", (req, res) => {
