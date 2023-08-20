@@ -23,7 +23,7 @@ const NavBar = () => {
           <div className='main-menu'>
             <ul className='nav-menu'>
               <li className='nav-item'>
-                <NavLink to="/booking" className={({ isActive }) =>
+                <NavLink to="booking" className={({ isActive }) =>
                   isActive ? "nav-link active-link" : "nav-link"
                 }>Bookings</NavLink>
               </li>
