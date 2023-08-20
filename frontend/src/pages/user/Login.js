@@ -1,9 +1,12 @@
 import React from 'react'
+import './Login.css'
 
-const Login = () => {
+function Login() {
   return (
-    <div>Login</div>
-  )
+    <div>
+      <div><h3 className='heading-text'>Login</h3></div>
+    </div>
+  );
 }
 
-export default Login  
+export default Login;

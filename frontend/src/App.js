@@ -10,8 +10,8 @@ function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route exact  path="/auth" element={<AuthStack />} />
-        <Route exact  path="/" element={<AppStack />} />
+        <Route exact path="/auth" element={<AuthStack />} />
+        <Route exact path="/" element={<AppStack />} />
       </Routes>
       <FooterBar />
     </Router>
