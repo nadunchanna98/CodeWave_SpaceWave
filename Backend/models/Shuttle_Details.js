@@ -30,7 +30,7 @@ const Shuttle_Details = sequelize.define('Shuttle_Details', {
   Arrival_Date_time: {
     type: DataTypes.DATE,
   },
-  Shuttle_Type: {
+  Shuttle_Name: {
     type: DataTypes.STRING(100),
   },
 });
