@@ -5,7 +5,7 @@ const sequelize = new Sequelize('spacewave', 'root', 'Gepn43159770', {
   dialect: 'mysql',
 });
 
-sequelize.sync({  })
+sequelize.sync({   })
   .then(() => {
     console.log('Drop and re-sync db.');
   })

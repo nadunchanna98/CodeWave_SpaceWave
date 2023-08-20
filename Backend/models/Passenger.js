@@ -1,5 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/sequelize');
+const User = require('./User');
+
 
 const Passenger = sequelize.define('Passenger', {
   Passenger_ID: {
@@ -7,6 +9,10 @@ const Passenger = sequelize.define('Passenger', {
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
+  },
+  user_ID: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
   },
   FirstName: {
     type: DataTypes.STRING(100),
@@ -34,5 +40,6 @@ const Passenger = sequelize.define('Passenger', {
     type: DataTypes.STRING(100),
   },
 });
+Passenger.belongsTo(User, { foreignKey: 'user_ID',as : 'User' });
 
 module.exports = Passenger;
