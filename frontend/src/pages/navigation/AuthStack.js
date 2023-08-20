@@ -9,6 +9,5 @@ function AuthStack() {
          <Route exact  path="/auth" element={<Login />} />
     </AuthProvider>
   );
-}
-
+  }
 export default AuthStack;
