@@ -21,6 +21,6 @@ const User = sequelize.define('User', {
   },
 });
 
-User.belongsTo(Passenger, { foreignKey: 'User_ID' });
+
 
 module.exports = User;

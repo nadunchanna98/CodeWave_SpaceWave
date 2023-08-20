@@ -17,13 +17,13 @@ router.get('/seatdetails', async (req, res) => {
 router.get('/seatdetails/:id', async (req, res) => {
      
 
-
+//get the shuttle id from the url
 const shuttleId = req.params.id; 
 
-//get the shuttle id from the url
-//const shuttleId = req.params.id; // Replace with the actual shuttle ID
-//get current date
 
+//const shuttleId = req.params.id; // Replace with the actual shuttle ID
+
+//get current date
 const targetDate = new Date(); // Replace with the actual target date
 
 // Query for available seats in the specified shuttle and date
