@@ -94,7 +94,8 @@ a.active-link {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        background-color: #0400cc;
+        background-color: #060628;
+        /* #0400cc*/
         position: fixed;
         top: 60px;
         left: 0px;

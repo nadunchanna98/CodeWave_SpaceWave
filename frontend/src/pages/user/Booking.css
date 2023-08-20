@@ -1,6 +1,247 @@
-.heading-text {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 200px;
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 480px;
+    /* background-color: blueviolet; */
 }
 
+.planet-container {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    /* background-color: #3654ff; */
+}
+
+.planet-name {
+    /* background-color: brown; */
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.planet-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: brown; */
+    align-self: flex-end;
+}
+
+.option-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.option-title {
+    color: white;
+    /* background-color: black; */
+    font-size: 18px;
+    font-weight: 700;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.title-text {
+    color: white;
+    font-weight: 700;
+}
+
+.arrow-button {
+    font-weight: 900;
+}
+
+.departure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.destination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.planet-selection button {
+    font-size: 16px;
+    /* background-color: chocolate; */
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.planet-displayContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.planet-displayContainer img {
+    width: 100px;
+    height: 100px;
+}
+
+/*  */
+
+.trip-type {
+    display: flex;
+    width: 100%;
+    /* background-color: #3654ff; */
+}
+
+.trip-type label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.trip-type input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.date-selection {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px 0px;
+    width: 100%;
+    /* background-color: #3654ff; */
+}
+
+.date-selection input[type="date"] {
+    font-size: 16px;
+}
+
+.seat-selection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* background-color: #3654ff; */
+}
+
+.seat-selection label {
+    margin-right: 15px;
+    color: white;
+}
+
+.seat-selection button {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 900;
+}
+
+.seat-selection button:hover {
+    cursor: pointer;
+}
+
+.seat-count {
+    color: white;
+    padding: 0px 10px;
+}
+
+.option-item {
+    display: flex;
+}
+
+.value-count {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 40px;
+}
+
+.ticket-type {
+    margin-right: 15px;
+}
+
+.proceed-button {
+    background: linear-gradient(to right, #9A0082, #0400CC);
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    margin-top: 15px;
+    font-size: 16px;
+    padding: 10px 45px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.proceed-button:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1200px) {
+    .booking-container {
+        padding: 60px 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .booking-container {
+        padding: 60px 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .booking-container {
+        padding: 60px 50px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .booking-container {
+        padding: 40px 20px;
+    }
+
+    .route {
+        display: none;
+    }
+
+    .planet-displayContainer img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .seat-selection .option-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trip-type .option-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planet-container {
+        display: flex;
+        margin-bottom: 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .option-title {
+        font-size: 14px;
+    }
+
+    .option-container {
+        gap: 10px;
+    }
+
+    .trip-type input[type="radio"] {
+        margin-right: 5px;
+    }
+}
