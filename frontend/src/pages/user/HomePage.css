@@ -75,6 +75,10 @@
     margin: 5px;
 }
 
+.search-button:hover {
+    cursor: pointer;
+}
+
 .explore-button {
     display: flex;
     align-items: center;
