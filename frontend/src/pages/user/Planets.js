@@ -9,4 +9,4 @@ function Planets() {
     );
 }
 
-export default Planets;
+export default Planets; 
