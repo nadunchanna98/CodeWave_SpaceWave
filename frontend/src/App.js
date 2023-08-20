@@ -1,20 +1,34 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import NavBar from './pages/layout/NavBar';
 import FooterBar from './pages/layout/FooterBar';
-import AuthStack from './pages/navigation/AuthStack';
-import AppStack from './pages/navigation/AppStack';
+import { AuthProvider } from './common/context';
+
+import Booking from './pages/user/Booking';
+import MyTrips from './pages/user/MyTrips';
+import Planets from './pages/user/Planets';
+import Plans from './pages/user/Plans';
+import About from './pages/user/About';
+import SignUp from './pages/user/SignUp';
+import Login from './pages/user/Login';
+import Home from './pages/user/HomePage';
 
 function App() {
   return (
-    <Router>
+    <AuthProvider>
       <NavBar />
       <Routes>
-        <Route exact  path="/auth" element={<AuthStack />} />
-        <Route exact  path="/" element={<AppStack />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/my-trips" element={<MyTrips />} />
+        <Route path="/planets" element={<Planets />} />
+        <Route path="/plans" element={<Plans />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
       <FooterBar />
-    </Router>
+      </AuthProvider>
   );
 }
 
