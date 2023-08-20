@@ -1,0 +1,20 @@
+.footerbar {
+    color: #D0D0D0;
+    font-size: 13px;
+    height: 40px;
+    background-color: #0400CC;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.company {
+    font-weight: bold;
+}
+
+.footer-content {
+    display: flex;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+}
