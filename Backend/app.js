@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api', planetRoutes);  //http://localhost:8080/api/planets
 app.use('/api', agencyRoutes);  //http://localhost:8080/api/agencies
 app.use('/api', SeatDetailsRoutes);  //http://localhost:8080/api/seatdetails
-
+app.use('/api', require('./routes/User'));  //http://localhost:8080/api/passengers
 
 // simple route
 app.get("/", (req, res) => {
