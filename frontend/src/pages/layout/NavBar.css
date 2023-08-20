@@ -1,0 +1,116 @@
+.navbar {
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: white;
+}
+
+a.active-link {
+    color: #F236F6;
+    font-weight: 700;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #D0D0D0;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #F236F6;
+}
+
+.desktop-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .nav-link:hover::after {
+    content: "";
+    width: 3%;
+    height: 2px;
+    background-color: #F236F6;
+    position: relative;
+    top: 50px;
+    left: 200px;
+} */
+
+#mobile {
+    display: none;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.login-button {
+    padding: 6px 25px;
+
+    /* border-style: solid;
+    border-width: 2px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #9A0082, #0400CC);
+    border-radius: 100px; */
+
+    background: linear-gradient(black, black) padding-box, linear-gradient(to right, #9A0082, #0400CC) border-box;
+    border-radius: 100px;
+    border: 2px solid transparent;
+}
+
+@media screen and (max-width: 768px) {
+    #mobile {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: #0400cc;
+        position: fixed;
+        top: 60px;
+        left: 0px;
+        width: 250px;
+        height: 100vh;
+        transition: 0.2s ease-in-out;
+    }
+
+    .active-mobile-nav {
+        left: -250px;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {}
