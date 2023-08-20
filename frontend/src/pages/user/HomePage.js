@@ -13,7 +13,8 @@ function HomePage() {
           <input placeholder='Search' className='search-input' />
           <button className='search-button'><LuSearch /><span className='boom-text'>Boom!</span></button>
         </div>
-        <button className='explore-button'><span className='button-text'>Explore</span><MdArrowForward /></button>
+        <button className='explore-button' onClick={() => {  window.location.href = '/planets'} }>
+          <span className='button-text'>Explore</span><MdArrowForward /></button>
       </div>
     </div>
   )
